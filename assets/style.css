@@ -1,3 +1,9 @@
+:root {
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #00F4BF;
+}
+
 body {
     background: url('img/images.jpeg');
     font-family: Arial, Helvetica, sans-serif;
@@ -5,6 +11,10 @@ body {
 
 #container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 1rem;
 }
 
 .cartao {
@@ -22,9 +32,10 @@ body {
 
 }
 .cartao__conteudo h3{
-    background-color: rgb(245, 100, 225);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
-    padding: 0.3rem;
+    padding: 0.2rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
