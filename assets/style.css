@@ -13,8 +13,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3rem;
-    gap: 1rem;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .cartao {
@@ -34,6 +34,7 @@ body {
 }
 
 .cartao__conteudo h3 {
+    background-color: rgb(253, 79, 166);
     text-align: left;
     padding: 0.2rem;
     position: absolute;
@@ -47,6 +48,20 @@ body {
     padding: 2rem;
     margin-top: 2rem;
     font-size: 1.2vw;
+}
+
+.cartao__conteudo__pergunta p {
+    color: deeppink;
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p {
+    color: deeppink;
+    font-weight: 700;
+}
+
+.cartao.active .cartao__conteudo {
+    transform: rotateY(180deg);
 }
 
 footer {
